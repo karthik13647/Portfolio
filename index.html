@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karthik's Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <section id="header">
+        <div class="header-top">  
+          <div class="logo">
+            <img src="assets/favicon.png" alt="stylesheet" width="50px" height="=50px">
+          </div>
+          <div class="nav-menu">
+            <ul id="sidemenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="bottom-left">
+            <h1 class="name">Karthik <span>Batta</span></h1>
+            <h3 class="profession">Coding Enthusiast</h3>
+            <p class="short-desc">
+              Person who interested in learn about New Technologies and love to build the Web Applications
+            </p>
+            <button id =btn-cv>Download CV</button>
+          </div>
+          <div class="bottom-right">
+            <a href="https://www.facebook.com/lovely.abhi.98837" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/karthik_136_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/karthik_b47" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/karthik-b-475484259/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section id="about">
+        <div class="about-left">
+          <img src="assets/abhi.jpg" alt="user-sideimg" />
+        </div>
+        <div class="about-right">
+          <div class="section-title">
+            <h2 class="sub-title">About Me</h2>
+            <h3 class="title">Programming Learner!</h3>
+          </div>
+          <p class="desc">I am currently pursuing Bachelor of Computer Science &amp; Business Systems.Since 3 Years, I started learn about Software related Technical Skills and the interest in technical fields which increasing my potentials.
+            I would love to explore new fields.
+          </p>
+          <h1 class="max">Objective</h1>
+          <p class="desc">Seeking a challenging job or entry-level position in Software Industry, leveraging my strong foundation in Engineering and Technology acquired during my B.tech program. Eager to apply my theoretical knowledge to practical, real-world projects and contribute to a dynamic team while continuing to learn and develop my skills</p>
+          <div class="tab-titles">
+            <!-- <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills -->
+            </p>
+            <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+            <p class="tab-links" onclick="openTab('experience')">Certifications</p>
+            
+          </div>
+          <!-- <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Programming Langages</span><br />Python, C, C++, Java
+              </li>
+              <li><span>Code Editors</span><br /> Visual Studio Code, Android Studio</li>
+            </ul>
+          </div> -->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Dec 2024 - Feb 2023</span><br />
+                Big Data Computing at NPTEL.
+              </li>
+              <li>
+                <span>Sept 2023 - Nov 2023</span><br />Data Analyst at AICTE Eduskills.
+              </li>
+              <li>
+                <span>Aug 2023 - Sept 2023</span><br />Python Developer at Code Clause.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents active-tab" id="education">
+            <ul>
+              <li>
+                <span>2021 - 2025</span><br />B.tech,CSBS in R.V.R & J.C College of Engineering.
+              </li>
+              <li>
+                <span>2019-2021</span><br />Intermediate in Jawahar Navodaya Vidyalaya Ongole.
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="skill">
+        <div class="skill-title">
+          <h2 class="headling">My Skills</h2>
+          <h3 class="head-title">Precious Resources</h3>
+          <div class="container_skill">
+            <div class="image-container">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/free-c-58-1175247.png" alt="c Logo">
+              <p>C Language</p>
+          </div>
+          <div class="image-container">
+            <img src="https://i.pinimg.com/736x/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.jpg" alt="Java Logo">
+            <p>Java</p>
+        </div>
+        <div class="image-container">
+          <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python Logo">
+          <p>Python</p>
+      </div>
+            <div class="image-container">
+                <img src="data:image/png;base64,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" alt="HTML Logo">
+                <p>HTML</p>
+            </div>
+    
+            <div class="image-container">
+                <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS Logo">
+                <p>CSS</p>
+            </div>
+
+            <div class="image-container">
+              <img src="https://imgs.search.brave.com/-2nvjLwHCLERDqSg1_AgIe3PCTRQa2y2NNDTNqzCDUw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nZXRi/b290c3RyYXAuY29t/L2RvY3MvNS4wL2Fz/c2V0cy9icmFuZC9i/b290c3RyYXAtbG9n/by5zdmc" alt="Bootstrap Logo">
+              <p>Bootstrap</p>
+          </div>
+
+          <div class="image-container">
+            <img src="https://imgs.search.brave.com/mV911E8UtjRiMRna3xyKzuGdO1aE2mRz_KtwQNsTbZA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlX2dh/bGxlcnkyL1BIUC1M/b2dvLVBORy5wbmc" alt="php Logo">
+            <p>PHP</p>
+        </div>
+    
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+                <p>JavaScript</p>
+            </div>
+            <div class="image-container">
+              <img src="data:image/png;base64,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" alt="DJANGO Logo">
+              <p>Django</p>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section id="portfolio">
+        <div class="section-title">
+          <h2 class="sub-title">My Projects</h2>
+          <h3 class="title">Awesome Works</h3>
+          <div class="project-list">
+            <div class="project">
+              <img src="assets/smart_order_system.jpg" alt="project1" />
+              <div class="layer">
+                <h3>Smart-Order-System</h3>
+                <p>
+                  Smart Order System (SOS) is a system which will help restaurant to optimize and control over their restaurants
+                </p>
+                <a href="https://karthik13647.github.io/Smart-Order-System/"
+                  target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/food-munch-website.png" alt="project2" />
+              <div class="layer">
+                <h3>Food Munch Website</h3>
+                <p>
+                  A Food based website which is built with HTML, CSS and Bootstrap Utilities
+                </p>
+                <a href="https://karthik13647.github.io/food-munch-website/" target="_blank"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/spotify-clone.png" alt="project3" />
+              <div class="layer">
+                <h3>Spotify Clone</h3>
+                <p>
+                  This is a Spotify Clone which is built with the help of HTML and vanilla CSS.
+                </p>
+                <a href="https://karthik13647.github.io/spotify-clone_/" target="_blank"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section id="contact">
+        <div class="section-title">
+          <h2 class="sub-title">Contact</h2>
+          <h3 class="title">Get in Touch</h3>
+        </div>
+        <div class="content">
+          <div class="contact-left">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">
+                Send Message <a href="mailto:karthikbatta6503@gmail.com"></a>
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+          <div class="vl"></div>
+          <div class="contact-right">
+            <div class="col address">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="info">
+                <h2 class="title">Address</h2>
+                <p>7-88,Vidyanagar,Chirala,Prakasam</p>
+              </div>
+            </div>
+            <div class="col phone">
+              <i class="fa-solid fa-phone"></i>
+              <div class="info">
+                <h2 class="title">Phone</h2>
+                <p>+91 939 8289 298</p>
+              </div>
+            </div>
+            <div class="col email">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <h2 class="title">Email</h2>
+                <p>karthik@karthikbatta.me</p>
+              </div>
+            </div>
+            <div class="col website">
+              <i class="fa-solid fa-globe"></i>
+              <div class="info">
+                <h2 class="title">Website</h2>
+                <p>www.karthikbatta.me</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p> Made with
+            <i class="fa-solid fa-heart"></i> by
+            <a href="#">Karthik</a>
+          </p>
+        </div>
+      </section>
+    </div>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzilAbX9ukthCSL1w6paEZ11kg7x5tGwz0CJyRpqxmtzK4iqNcNzZEUsqrJmkg1NNMSNw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function() {
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
